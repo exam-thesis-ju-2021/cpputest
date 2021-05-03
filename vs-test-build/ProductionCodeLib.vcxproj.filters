@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\example-src\Example.c" />
+    <ClCompile Include="..\example-platform\io.c" />
+    <ClCompile Include="library\module_a.c">
+      <Filter>library</Filter>
+    </ClCompile>
+    <ClCompile Include="library\peripheral.c">
+      <Filter>library</Filter>
+    </ClCompile>
+    <ClCompile Include="library\peripherals.c">
+      <Filter>library</Filter>
+    </ClCompile>
+    <ClCompile Include="library\hardware.c">
+      <Filter>library</Filter>
+    </ClCompile>
+    <ClCompile Include="library\peripherals\divide_by_half.c">
+      <Filter>library\peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="library\peripherals\multiply_by_two.c">
+      <Filter>library\peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="library\peripherals\power_of_two.c">
+      <Filter>library\peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="library\peripherals\square_root.c">
+      <Filter>library\peripherals</Filter>
+    </ClCompile>
+    <ClCompile Include="pythagorean.c" />
+    <ClCompile Include="square_root.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\example-include\Example.h" />
+    <ClInclude Include="..\example-include\FooExample.h" />
+    <ClInclude Include="..\example-include\io.h" />
+    <ClInclude Include="library\module_a.h">
+      <Filter>library</Filter>
+    </ClInclude>
+    <ClInclude Include="library\peripheral.h">
+      <Filter>library</Filter>
+    </ClInclude>
+    <ClInclude Include="library\peripherals.h">
+      <Filter>library</Filter>
+    </ClInclude>
+    <ClInclude Include="library\hardware.h">
+      <Filter>library</Filter>
+    </ClInclude>
+    <ClInclude Include="library\peripherals\divide_by_half.h">
+      <Filter>library\peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="library\peripherals\multiply_by_two.h">
+      <Filter>library\peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="library\peripherals\power_of_two.h">
+      <Filter>library\peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="library\peripherals\square_root.h">
+      <Filter>library\peripherals</Filter>
+    </ClInclude>
+    <ClInclude Include="pythagorean.h" />
+    <ClInclude Include="square_root.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="library">
+      <UniqueIdentifier>{13685bb5-45b7-4c9b-9272-2003d7e63270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\peripherals">
+      <UniqueIdentifier>{fe997c80-5d74-4fd3-b2e6-7163d26190c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
