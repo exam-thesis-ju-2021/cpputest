@@ -107,8 +107,6 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\example-src\Example.c" />
-    <ClCompile Include="..\example-platform\io.c" />
     <ClCompile Include="library\hardware.c" />
     <ClCompile Include="library\module_a.c" />
     <ClCompile Include="library\peripheral.c" />
@@ -117,13 +115,8 @@
     <ClCompile Include="library\peripherals\multiply_by_two.c" />
     <ClCompile Include="library\peripherals\power_of_two.c" />
     <ClCompile Include="library\peripherals\square_root.c" />
-    <ClCompile Include="pythagorean.c" />
-    <ClCompile Include="square_root.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\example-include\Example.h" />
-    <ClInclude Include="..\example-include\FooExample.h" />
-    <ClInclude Include="..\example-include\io.h" />
     <ClInclude Include="library\hardware.h" />
     <ClInclude Include="library\module_a.h" />
     <ClInclude Include="library\peripheral.h" />
@@ -132,8 +125,6 @@
     <ClInclude Include="library\peripherals\multiply_by_two.h" />
     <ClInclude Include="library\peripherals\power_of_two.h" />
     <ClInclude Include="library\peripherals\square_root.h" />
-    <ClInclude Include="pythagorean.h" />
-    <ClInclude Include="square_root.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

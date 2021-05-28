@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\example-src\Example.c" />
-    <ClCompile Include="..\example-platform\io.c" />
     <ClCompile Include="library\module_a.c">
       <Filter>library</Filter>
     </ClCompile>
@@ -27,13 +25,8 @@
     <ClCompile Include="library\peripherals\square_root.c">
       <Filter>library\peripherals</Filter>
     </ClCompile>
-    <ClCompile Include="pythagorean.c" />
-    <ClCompile Include="square_root.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\example-include\Example.h" />
-    <ClInclude Include="..\example-include\FooExample.h" />
-    <ClInclude Include="..\example-include\io.h" />
     <ClInclude Include="library\module_a.h">
       <Filter>library</Filter>
     </ClInclude>
@@ -58,8 +51,6 @@
     <ClInclude Include="library\peripherals\square_root.h">
       <Filter>library\peripherals</Filter>
     </ClInclude>
-    <ClInclude Include="pythagorean.h" />
-    <ClInclude Include="square_root.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="library">

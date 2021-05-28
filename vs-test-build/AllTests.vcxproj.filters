@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\tests\AllTests.cpp" />
+    <ClCompile Include="test_assertions.cpp" />
+    <ClCompile Include="test_exception_signal.cpp" />
+    <ClCompile Include="test_extensibility.cpp" />
+    <ClCompile Include="test_memory_leaks.cpp" />
+    <ClCompile Include="test_mocking.cpp" />
+    <ClCompile Include="test_fixtures.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mocks">
+      <UniqueIdentifier>{ba999098-dfee-4c62-9490-2b3b372356eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mock_module_a.h">
+      <Filter>mocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

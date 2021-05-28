@@ -8,6 +8,8 @@
 
 int main(int ac, char** av)
 {
+    MemoryLeakWarningPlugin::turnOnThreadSafeNewDeleteOverloads();
+    MemoryLeakWarningPlugin::turnOffNewDeleteOverloads();
     //MemoryLeakWarningPlugin::turnOffNewDeleteOverloads();
     return CommandLineTestRunner::RunAllTests(ac, av);
 }

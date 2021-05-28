@@ -7,7 +7,7 @@ extern "C"
 
 void ASSERT_PIN_STATE(PinState expected, uint16_t gpio);
 
-TEST_GROUP(Extensibility_test)
+TEST_GROUP(test_extensibility)
 {
     void setup()
     {
@@ -20,7 +20,7 @@ TEST_GROUP(Extensibility_test)
     }
 };
 
-TEST(Extensibility_test, selfMade_assert)
+TEST(test_extensibility, extension)
 {
 	uint16_t pin = 4;
 	digital_write(pin, HIGH);
@@ -29,9 +29,20 @@ TEST(Extensibility_test, selfMade_assert)
 
 void ASSERT_PIN_STATE(PinState expected, uint16_t gpio)
 {
-	char* output = (char*)malloc(128 * sizeof(char));
+	printf("Executing extended assertion...\n");
 
-	if (digital_read(gpio) != expected)
+	char* output = (char*)malloc(128 * sizeof(char));
+	if (!output) {
+		FAIL("Failed to allocate memory for 'char* output'");
+		return;
+	}
+
+	if (digital_read(gpio) == expected)
+	{
+		sprintf(output, "Custom assertion '%s' passed.", __func__);
+		CHECK_TEXT(true, output);
+	}
+	else
 	{
 		sprintf(output, "Custom assertion '%s' failed.", __func__);
 		FAIL(output);

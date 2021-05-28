@@ -134,20 +134,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\tests\AllTests.cpp" />
-    <ClCompile Include="..\tests\ExampleTest.cpp" />
-    <ClCompile Include="Module_a_Test.cpp" />
-    <ClCompile Include="pythagorean.cpp" />
-    <ClCompile Include="square_root_mock.cpp" />
     <ClCompile Include="test_assertions.cpp" />
-    <ClCompile Include="test_memmoryLeaks.cpp" />
+    <ClCompile Include="test_exception_signal.cpp" />
+    <ClCompile Include="test_extensibility.cpp" />
+    <ClCompile Include="test_memory_leaks.cpp" />
     <ClCompile Include="test_mocking.cpp" />
-    <ClCompile Include="test_testFixtures.cpp" />
+    <ClCompile Include="test_fixtures.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ProductionCodeLib.vcxproj">
       <Project>{b91444f6-1620-4836-8bde-05a795a7e772}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mock_module_a.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
